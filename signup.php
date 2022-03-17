@@ -19,5 +19,6 @@
  <br>Confirm Password:<input type="password" name="confirmpassword" placeholder="Confirm your password"></br>
         <br><input type="submit" value="Sign Up" id=""><a href="/GroceryStoreManagement">Back To Home</a> </br>
         </form>
+
     </body>
     </html>
