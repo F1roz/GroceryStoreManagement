@@ -41,7 +41,7 @@ body{
 }
 
 #showcase{
-	background-image:url('transparent.jpg');
+	background-image:url('./image/transparent.jpg');
 	background-position:center right;
 	min-height:300px;
 	margin-bottom:30px;

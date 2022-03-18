@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>We are here for 24/7 to support you</h1>
-    <form action="/action_page.php" id="usrform">
+    <form method="Post" action="actionpage.php" id="usrform">
   Name: <input type="text" name="usrname">
   <input type="submit">
 </form>

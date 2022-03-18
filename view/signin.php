@@ -1,4 +1,5 @@
-    <!DOCTYPE html>
+<?php include "../control/signin_controller.php" ?>
+ <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
