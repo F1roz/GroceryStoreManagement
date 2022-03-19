@@ -7,7 +7,16 @@
     <title>User Dashboard</title>
 </head>
 <body>
-<br> <a href="/GroceryStoreManagement">Back To Home</a> <br>
+<nav id="navbar">
+        <div class="container">
+          <a1>
+            <li><a href="/GroceryStoreManagement/view/home.php">Home</a></li>
+            
+            <li><a href="/GroceryStoreManagement/view/support.php">Support</a></li>
+          </a1>
+        </div>
+      </nav>
+
 <table>
   <tr>
     <th>Name</th>
