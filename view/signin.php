@@ -12,7 +12,11 @@
     <h2>Sign In</h2>
 <form name="myForm" action="" method="post">
 <input type="text" name="email" placeholder="Enter your Email" > <br> <br>
-<input type="password" name="password" placeholder="Enter your password" ><br> <br>  
+
+<?php echo $Email ?> 
+<input type="password" name="password" placeholder="Enter your password" ><br> <br> 
+
+<?php echo $Password ?> 
 <input name="submit" type="submit" value="SIGN IN">
 <a href="/GroceryStoreManagement">Back To Home</a>
 </form>

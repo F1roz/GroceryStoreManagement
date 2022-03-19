@@ -52,7 +52,7 @@ if (isset($_POST["Sign_Up"])) {
         setcookie("Address", $Address, time() + 3600);
     }
 
-    if (empty($Password) && (strlen($_REQUEST["password"]) < 8)) {
+    if (empty($Password) && (strlen($_REQUEST["password"]) < 3)) {
         $validationPassword = "Please enter your Password";
     } else {
         $Password = $_REQUEST["password"];
@@ -63,5 +63,5 @@ if (isset($_POST["Sign_Up"])) {
     } else {
         $validationConfirm_Password = "Password does not match";
     }
-    header("Location: /GroceryStoreManagement/view/dashboard.php");
+    header("Location: /GroceryStoreManagement/view/signin.php");
 }
