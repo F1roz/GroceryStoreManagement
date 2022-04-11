@@ -8,7 +8,7 @@ $validationAddress = '';
 $validationPassword = '';
 $validationConfirm_Password = '';
 
-//php validation
+//sign up validation
 if (isset($_POST["Sign_Up"])) {
     $Name = $_REQUEST["name"];
     $Email = $_REQUEST["email"];
@@ -35,11 +35,11 @@ if (isset($_POST["Sign_Up"])) {
     if (empty($Phone_Number) || (strlen($_REQUEST["phone"]) < 11)) {
         $validationPhone_Number = "Please enter your Phone Number";
     } else {
-        $Phone_Number = $_REQUEST["phone"];;
+        $Phone_Number = $_REQUEST["phone"];
         setcookie("phone", $Phone_Number, time() + 3600);
     }
 
-    if (empty($DOB) || (strlen($_REQUEST["dob"]) < 11)) {
+    if (empty($DOB) || (strlen($_REQUEST["dob"]) < 8)) {
         $validationDOB = "Please enter your DOB";
     } else {
         $DOB = $_REQUEST["dob"];;

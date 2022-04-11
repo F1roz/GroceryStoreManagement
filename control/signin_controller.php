@@ -2,7 +2,7 @@
 $Email = $Password = "";
 $validationName = '';
 
-//php validation
+//sign in validation
 if (isset($_POST["submit"])) {
 	$Email = $_REQUEST["email"];
 	$Password = $_REQUEST["password"];
