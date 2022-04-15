@@ -24,18 +24,28 @@
 		return $row;
 	}
 	function getAllProducts(){
-		$conn = getConnection();
-		$sql = "select * from products";
-		$result = mysqli_query($conn, $sql);
+		// $conn = getConnection();
+		// $sql = "select * from products";
+		// $result = mysqli_query($conn, $sql);
 		
-		$product =[];
+		// $product =[];
 
-		while($row = mysqli_fetch_assoc($result)){
-			array_push($product, $row); 
-			global $product;
-		}
+		// while($row = mysqli_fetch_($result)){
+		// 	array_push($product, $row); 
+		// 	global $product;
+		// }
 
-		return $product;
+		// return $product;
+
+        $conn = getConnection();
+        $sql = "select * from products";
+        $result = mysqli_query($conn, $sql);
+        $products = [];
+        while($row = mysqli_fetch_assoc($result)){
+            $products[] = $row;
+        }
+        return $products;
+        
 
 	}
 ?>

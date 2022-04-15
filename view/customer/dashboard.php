@@ -5,29 +5,34 @@
 
 <div class="container">
 <div class= "row">
-<div class="col-4">
+<div class="">
 <!-- Start of Card Deck Layout -->
 <div class="d-flex d-grid gap-3 pt-5">
 
 <?php
-$conn = mysqli_connect('localhost', 'root', '', 'groceteria');
-  $sql = "select * from products";
-  $result = mysqli_query($conn, $sql);
+$numOfCols = 4;
+$rowCount = 0;
+$bootstrapColWidth = 12 / $numOfCols;
+$result1=getAllProducts();
+foreach($result1 as $pro){
+  ?>
+  <div class="col-md-<?php echo $bootstrapColWidth; ?> pt-3">
+  <div class='card ' style='width: 18rem;'>
   
-  while($pro=mysqli_fetch_array($result))
-{
-  echo "<div class='card ' style='width: 18rem;'>";
-  
-  echo '<img src="';echo $pro["p_image"]; echo '"class="card-img-top img-thumbnail" style="height: 200px;"alt="...">';
-  echo '<div class="card-body">';
-    echo '<h5 class="card-title">';echo $pro["p_name"]; echo '</h5>';
-   echo  "<p class='card-text'>";echo $pro["p_description"]; echo"</p>";
-  echo  '<ul class="list-group list-group-flush">';
-  echo  '  <li class="list-group-item fw-bold pb-5">Price: <span class="fs-6 fw-light">'; echo $pro["p_price"]; echo' </span></li>';
-  echo  "</ul>" ;
-  echo '<div class="pb-2">';
-  echo  '<a href="#" class="btn btn-primary">Buy Now</a>';
-  echo  "</div> </div> </div>";
+<img src='<?php echo $pro["p_image"]?>' class="card-img-top img-thumbnail" style="height: 200px;"alt="...">
+<div class="card-body">
+<h5 class="card-title"> <?php echo $pro["p_name"]?></h5>
+  <p class='card-text'> <?php echo $pro["p_description"] ?> </p>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item fw-bold pb-5">Price: <span class="fs-6 fw-light"> <?php echo $pro["p_price"] ?> </span></li>
+  </ul>
+<div class="pb-2">
+  <a href="#" class="btn btn-primary">Buy Now</a>
+  </div> </div> </div> </div>
+
+<?php
+  $rowCount++;
+  if($rowCount % $numOfCols == 0) echo '</div><div class="row">';
 }
   ?>
   </div></div>

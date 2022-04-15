@@ -90,3 +90,14 @@ body{
 		float:none;
 	}
 }
+.form-horizontal{
+    display:block;
+    width:50%;
+    margin:0 auto;
+}
+.center {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;  
+  }
