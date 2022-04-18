@@ -19,7 +19,8 @@
   <tbody>
     
     <?php
-      $c_id=1;
+    session_start();
+      $c_id=$_SESSION['user']['c_id'];
         $result=getPurchaseHistory($c_id);
         $i=1;
         foreach($result as $row){

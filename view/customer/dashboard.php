@@ -27,7 +27,7 @@ require_once('../../model/productsDB.php');
                   <li class="list-group-item fw-bold pb-5">Price: <span class="fs-6 fw-light"> <?php echo $pro["p_price"] ?> </span></li>
                 </ul>
                 <div class="pb-2">
-                  <a href='../../control/buyNow.php?b=<?= $pro["p_id"] ?>' class="btn btn-primary">Buy Now</a>
+                  <a href='../../control/buyNow.php?p_id=<?= $pro["p_id"] ?>' class="btn btn-primary">Buy Now</a>
                 </div>
               </div>
             </div>
