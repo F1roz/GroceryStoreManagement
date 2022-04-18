@@ -48,7 +48,10 @@
 	function insertCustomers($customer){
 
 		$conn = getConnection();
-		$sql = "insert into customers values('','{$customer['c_name']}', '{$customer['c_add']}','{$customer['c_phone']}', '{$customer['c_password']}','{$customer['c_email']}')";
+		$sql = "insert into customers values
+				('','{$customer['c_name']}', '{$customer['c_add']}',
+				'{$customer['c_phone']}', '{$customer['c_password']}',
+				'{$customer['c_email']}')";
 		
 		
 		if(mysqli_query($conn, $sql)){

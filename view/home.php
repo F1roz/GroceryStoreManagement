@@ -2,7 +2,7 @@
   <html>
     <head>
       <title>Groceteria</title>
-      <link rel="stylesheet" type="text/css" href="/GroceryStoreManagement/view/style.css" />
+      <link rel="stylesheet" type="text/css" href="./style.css" />
     </head>
     <body>
       <header id="main-header">
@@ -14,10 +14,10 @@
       <nav id="navbar">
         <div class="container">
           <a1>
-            <li><a href="/GroceryStoreManagement/view/home.php">Home</a></li>
-          <li><a href="/GroceryStoreManagement/view/signin.php">Sign in</a></li>
-            <li><a href="/GroceryStoreManagement/view/signup.php">Sign Up</a></li>
-            <li><a href="/GroceryStoreManagement/view/support.php">Support</a></li>
+            <li><a href="./home.php">Home</a></li>
+          <li><a href="./signin.php">Sign in</a></li>
+            <li><a href="./signup.php">Sign Up</a></li>
+            <li><a href="./support.php">Support</a></li>
           </a1>
         </div>
       </nav>

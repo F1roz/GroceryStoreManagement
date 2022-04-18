@@ -2,11 +2,12 @@
     require_once('db.php');
 
     function insertPurchaseHistory($p_id,$c_id){
-
+		$time= date("Y-m-d H:i:s");
+		
 
 		$conn = getConnection();
-		$sql = "insert into purchase values('','{$p_id}', '{$c_id}')";
-		
+		$sql = "insert into purchase values
+				('','{$p_id}', '{$c_id}', '{$time}')";
 		if(mysqli_query($conn, $sql)){
 			return true;
 		}else{

@@ -16,7 +16,7 @@
         <input type="text" id="email" name="email" placeholder="Enter your Email"> <br> <br>
         <input type="password" id="password" name="password" placeholder="Enter your password"><br> <br>
         <input name="submit" type="submit" value="SIGN IN" onclick="loginvalidate()">
-        <a href="/GroceryStoreManagement">Back To Home</a>
+        <a href="./home.phpt">Back To Home</a>
     </form>
 
     <br>
