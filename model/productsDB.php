@@ -17,26 +17,14 @@
 
 		$conn = getConnection();
 
-		$sql = "select * from products where id='{$id}'";
+		$sql = "select * from products where p_id='{$id}'";
 		$result = mysqli_query($conn, $sql);
 		$row = mysqli_fetch_assoc($result);
 
 		return $row;
 	}
 	function getAllProducts(){
-		// $conn = getConnection();
-		// $sql = "select * from products";
-		// $result = mysqli_query($conn, $sql);
 		
-		// $product =[];
-
-		// while($row = mysqli_fetch_($result)){
-		// 	array_push($product, $row); 
-		// 	global $product;
-		// }
-
-		// return $product;
-
         $conn = getConnection();
         $sql = "select * from products";
         $result = mysqli_query($conn, $sql);
@@ -45,7 +33,5 @@
             $products[] = $row;
         }
         return $products;
-        
-
 	}
 ?>
