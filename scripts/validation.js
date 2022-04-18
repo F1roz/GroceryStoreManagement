@@ -5,7 +5,7 @@ function loginvalidate() {
   var password = document.getElementById("password").value;
   var error_message = "";
   if (email == "") {
-    error_message += "Username is required. ";
+    error_message += "Email is required.";
   }
   if (password == "") {
     error_message += "Password is required. ";

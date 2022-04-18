@@ -3,8 +3,6 @@
 
     function insertPurchaseHistory($p_id,$c_id){
 		$time= date("Y-m-d H:i:s");
-		
-
 		$conn = getConnection();
 		$sql = "insert into purchase values
 				('','{$p_id}', '{$c_id}', '{$time}')";
@@ -29,20 +27,6 @@
         return $products;
 	}
 
-	function getTransactionList($trans,$username){
-		$conn = getConnection();
-		$sql = "select * from transaction";
-		$result = mysqli_query($conn, $sql);
-		
-		$trans =[];
-
-		while($row = mysqli_fetch_assoc($result)){
-			array_push($trans, $row); 
-			global $trans;
-		}
-
-		return $trans;
-
-	}
+	
 
 ?>

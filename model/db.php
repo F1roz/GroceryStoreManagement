@@ -1,9 +1,5 @@
 <?php
 
-function alertMsg($msg)
-{
-	echo '<script>alert("' . $msg . '")</script>';
-}
 $dbuser = 'root';
 $dbpass = '';
 $host 	= 'localhost';

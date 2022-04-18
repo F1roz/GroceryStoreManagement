@@ -12,11 +12,11 @@
 <body>
 
     <h2>Sign In</h2>
-    <form name="myForm" action="" method="post">
+    <form id="myForm" action="../control/signin_controller.php" method="post">
         <input type="text" id="email" name="email" placeholder="Enter your Email"> <br> <br>
         <input type="password" id="password" name="password" placeholder="Enter your password"><br> <br>
         <input name="submit" type="submit" value="SIGN IN" onclick="loginvalidate()">
-        <a href="./home.phpt">Back To Home</a>
+        <a href="./home.php">Back To Home</a>
     </form>
 
     <br>

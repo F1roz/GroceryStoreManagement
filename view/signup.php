@@ -16,12 +16,12 @@
     <form name="signupForm" action="" method="post">
         <h1>Sign Up</h1>
         <br>Full Name:<input type="text" id="name" name="name" placeholder="Enter your name"></br>
-        <br>Email:<input type="text"  id="email" name="email" placeholder="Enter your email"></br>
+        <br>Email:<input type="text" id="email" name="email" placeholder="Enter your email"></br>
         <br> Phone Number:<input type="text" id="phone" name="phone" placeholder="Enter your number"></br>
         <br>Address:<input type="text" id="address" name="address" placeholder="Enter your Address"></br>
         <br>Password:<input type="password" id="password" name="password" placeholder="Type your password"></br>
-       <br>Confirm Password:<input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password"></br></br>
-        <input name="submit" type="submit" value="SIGN up" onclick="signupValidate()">
+        <br>Confirm Password:<input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password"></br></br>
+        <input name="submit" type="submit" value="SIGN UP" onclick="signupValidate()">
     </form>
     <script type="text/javascript" src="../scripts/validation.js"></script>
 </body>
