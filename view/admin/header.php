@@ -31,10 +31,7 @@
           <a class="nav-link active" aria-current="page" href="./dashboard.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./purchaseHistory.php">Purchase History</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#" tabindex="-1" >Profile</a>
+          <a class="nav-link active" aria-current="page" href="./addProduct.php">Add Product</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../../control/logout.php">Log Out</a>
