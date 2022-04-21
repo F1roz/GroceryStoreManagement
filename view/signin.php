@@ -20,7 +20,7 @@
     </form>
 
     <br>
-    <h4 slighly>Don't have an account?</h4>
+    <h4 slighly>Don't have an account?</h4> <a href="../view/signup.php">Sign Up</a>
     <h3 id="error">
     </h3>
     <script type="text/javascript" src="../scripts/validation.js"></script>
